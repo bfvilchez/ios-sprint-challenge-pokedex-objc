@@ -14,9 +14,10 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic) NSString *name;
 @property(nonatomic) int pokemonID;
 @property(nonatomic)NSArray *ablilities;
+@property NSString *sprite;
 
 - (instancetype)initWithDictionary:(NSDictionary *)dictionary;
-- (instancetype)initWithName:(NSString *)name pokemonID:(int)pokemonID abilities:(NSArray *)abilities;
+- (instancetype)initWithName:(NSString *)name pokemonID:(int)pokemonID abilities:(NSArray *)abilities sprite:(NSString *)sprite;
 
 @end
 
