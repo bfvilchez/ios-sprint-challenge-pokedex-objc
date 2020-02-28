@@ -13,6 +13,8 @@
 		DDA03CF424097B25004CB01C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDA03CF324097B25004CB01C /* Assets.xcassets */; };
 		DDA03CF724097B25004CB01C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDA03CF524097B25004CB01C /* LaunchScreen.storyboard */; };
 		DDA03CFA24097B25004CB01C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA03CF924097B25004CB01C /* main.m */; };
+		DDA03D0824097DE3004CB01C /* PokemonsCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA03D0724097DE3004CB01C /* PokemonsCollectionViewController.m */; };
+		DDA03D0B24097DF4004CB01C /* PokemonDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA03D0A24097DF4004CB01C /* PokemonDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		DDA03CF624097B25004CB01C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DDA03CF824097B25004CB01C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DDA03CF924097B25004CB01C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DDA03D0624097DE3004CB01C /* PokemonsCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PokemonsCollectionViewController.h; sourceTree = "<group>"; };
+		DDA03D0724097DE3004CB01C /* PokemonsCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PokemonsCollectionViewController.m; sourceTree = "<group>"; };
+		DDA03D0924097DF4004CB01C /* PokemonDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PokemonDetailViewController.h; sourceTree = "<group>"; };
+		DDA03D0A24097DF4004CB01C /* PokemonDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PokemonDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,7 @@
 		DDA03CE624097B25004CB01C /* Pokedex */ = {
 			isa = PBXGroup;
 			children = (
+				DDA03D0224097D88004CB01C /* View Controllers */,
 				DDA03D0124097D5F004CB01C /* Resources */,
 				DDA03D0024097B45004CB01C /* Storyboards */,
 				DDA03CF324097B25004CB01C /* Assets.xcassets */,
@@ -85,6 +92,17 @@
 				DDA03CEB24097B25004CB01C /* SceneDelegate.m */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		DDA03D0224097D88004CB01C /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DDA03D0624097DE3004CB01C /* PokemonsCollectionViewController.h */,
+				DDA03D0724097DE3004CB01C /* PokemonsCollectionViewController.m */,
+				DDA03D0924097DF4004CB01C /* PokemonDetailViewController.h */,
+				DDA03D0A24097DF4004CB01C /* PokemonDetailViewController.m */,
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,7 +175,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDA03D0824097DE3004CB01C /* PokemonsCollectionViewController.m in Sources */,
 				DDA03CE924097B25004CB01C /* AppDelegate.m in Sources */,
+				DDA03D0B24097DF4004CB01C /* PokemonDetailViewController.m in Sources */,
 				DDA03CFA24097B25004CB01C /* main.m in Sources */,
 				DDA03CEC24097B25004CB01C /* SceneDelegate.m in Sources */,
 			);

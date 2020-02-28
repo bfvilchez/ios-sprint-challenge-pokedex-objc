@@ -11,7 +11,7 @@
         <!--Pokemons-->
         <scene sceneID="iQP-j3-khw">
             <objects>
-                <collectionViewController id="IFI-hg-2NU" sceneMemberID="viewController">
+                <collectionViewController id="IFI-hg-2NU" customClass="PokemonsCollectionViewController" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="wg3-iv-H6R">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -75,7 +75,7 @@
         <!--Pokemon-->
         <scene sceneID="ZJy-6f-hcv">
             <objects>
-                <viewController id="lwG-Hq-3dU" sceneMemberID="viewController">
+                <viewController id="lwG-Hq-3dU" customClass="PokemonDetailViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="u84-P3-F8Y">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
