@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DD602D8A2409C38600F0BFE9 /* PokemonDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD602D892409C38600F0BFE9 /* PokemonDetailViewController.swift */; };
 		DDA03CE924097B25004CB01C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA03CE824097B25004CB01C /* AppDelegate.m */; };
 		DDA03CEC24097B25004CB01C /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA03CEB24097B25004CB01C /* SceneDelegate.m */; };
 		DDA03CF224097B25004CB01C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDA03CF024097B25004CB01C /* Main.storyboard */; };
@@ -14,12 +15,13 @@
 		DDA03CF724097B25004CB01C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDA03CF524097B25004CB01C /* LaunchScreen.storyboard */; };
 		DDA03CFA24097B25004CB01C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA03CF924097B25004CB01C /* main.m */; };
 		DDA03D0824097DE3004CB01C /* PokemonsCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA03D0724097DE3004CB01C /* PokemonsCollectionViewController.m */; };
-		DDA03D0B24097DF4004CB01C /* PokemonDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA03D0A24097DF4004CB01C /* PokemonDetailViewController.m */; };
 		DDA03D0F24097E9D004CB01C /* BFVPokemon.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA03D0E24097E9D004CB01C /* BFVPokemon.m */; };
 		DDA03D1324099034004CB01C /* PokemonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA03D1224099034004CB01C /* PokemonController.swift */; };
+		DDA03D162409A0EE004CB01C /* PokemonCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA03D152409A0EE004CB01C /* PokemonCollectionViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DD602D892409C38600F0BFE9 /* PokemonDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonDetailViewController.swift; sourceTree = "<group>"; };
 		DDA03CE424097B25004CB01C /* Pokedex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pokedex.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDA03CE724097B25004CB01C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DDA03CE824097B25004CB01C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -32,12 +34,12 @@
 		DDA03CF924097B25004CB01C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DDA03D0624097DE3004CB01C /* PokemonsCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PokemonsCollectionViewController.h; sourceTree = "<group>"; };
 		DDA03D0724097DE3004CB01C /* PokemonsCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PokemonsCollectionViewController.m; sourceTree = "<group>"; };
-		DDA03D0924097DF4004CB01C /* PokemonDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PokemonDetailViewController.h; sourceTree = "<group>"; };
-		DDA03D0A24097DF4004CB01C /* PokemonDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PokemonDetailViewController.m; sourceTree = "<group>"; };
 		DDA03D0D24097E9D004CB01C /* BFVPokemon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BFVPokemon.h; sourceTree = "<group>"; };
 		DDA03D0E24097E9D004CB01C /* BFVPokemon.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BFVPokemon.m; sourceTree = "<group>"; };
 		DDA03D1124099034004CB01C /* Pokedex-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Pokedex-Bridging-Header.h"; sourceTree = "<group>"; };
 		DDA03D1224099034004CB01C /* PokemonController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonController.swift; sourceTree = "<group>"; };
+		DDA03D142409A0EE004CB01C /* PokemonCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PokemonCollectionViewCell.h; sourceTree = "<group>"; };
+		DDA03D152409A0EE004CB01C /* PokemonCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PokemonCollectionViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,8 +109,9 @@
 			children = (
 				DDA03D0624097DE3004CB01C /* PokemonsCollectionViewController.h */,
 				DDA03D0724097DE3004CB01C /* PokemonsCollectionViewController.m */,
-				DDA03D0924097DF4004CB01C /* PokemonDetailViewController.h */,
-				DDA03D0A24097DF4004CB01C /* PokemonDetailViewController.m */,
+				DDA03D142409A0EE004CB01C /* PokemonCollectionViewCell.h */,
+				DDA03D152409A0EE004CB01C /* PokemonCollectionViewCell.m */,
+				DD602D892409C38600F0BFE9 /* PokemonDetailViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -206,8 +209,9 @@
 				DDA03D1324099034004CB01C /* PokemonController.swift in Sources */,
 				DDA03CE924097B25004CB01C /* AppDelegate.m in Sources */,
 				DDA03D0F24097E9D004CB01C /* BFVPokemon.m in Sources */,
-				DDA03D0B24097DF4004CB01C /* PokemonDetailViewController.m in Sources */,
 				DDA03CFA24097B25004CB01C /* main.m in Sources */,
+				DD602D8A2409C38600F0BFE9 /* PokemonDetailViewController.swift in Sources */,
+				DDA03D162409A0EE004CB01C /* PokemonCollectionViewCell.m in Sources */,
 				DDA03CEC24097B25004CB01C /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

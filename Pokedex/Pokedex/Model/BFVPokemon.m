@@ -28,7 +28,6 @@
     NSString *name = dictionary[@"name"];
     NSArray * abilities = dictionary[@"abilities"];
     NSString *sprite = dictionary[@"sprites"][@"front_default"];
-    NSLog(@"%@", abilities);
     return [self initWithName:name pokemonID:pokemonID abilities:abilities sprite:sprite];
 }
 

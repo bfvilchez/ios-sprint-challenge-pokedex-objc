@@ -23,7 +23,7 @@
                             <inset key="sectionInset" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PokemonCell" id="Ky7-iD-e1T">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PokemonCell" id="Ky7-iD-e1T" customClass="PokemonCollectionViewCell">
                                 <rect key="frame" x="10" y="0.0" width="186" height="186"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="zbh-TY-onO">
@@ -57,7 +57,9 @@
                                 </collectionViewCellContentView>
                                 <size key="customSize" width="186" height="186"/>
                                 <connections>
-                                    <segue destination="lwG-Hq-3dU" kind="show" id="wok-cg-HIJ"/>
+                                    <outlet property="pokemonImage" destination="GdK-9s-K01" id="ogx-6b-Uge"/>
+                                    <outlet property="pokemonName" destination="G1b-b1-VZ2" id="6eN-hl-10h"/>
+                                    <segue destination="lwG-Hq-3dU" kind="show" identifier="PokemonDetailSegue" id="wok-cg-HIJ"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -75,7 +77,7 @@
         <!--Pokemon-->
         <scene sceneID="ZJy-6f-hcv">
             <objects>
-                <viewController id="lwG-Hq-3dU" customClass="PokemonDetailViewController" sceneMemberID="viewController">
+                <viewController id="lwG-Hq-3dU" customClass="PokemonDetailViewController" customModule="Pokedex" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="u84-P3-F8Y">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -116,6 +118,11 @@
                         <viewLayoutGuide key="safeArea" id="elS-h9-IOY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Pokemon" id="H0H-Nz-z5a"/>
+                    <connections>
+                        <outlet property="ablilitiesLabel" destination="mL5-2h-oiS" id="AdY-Cr-Pbz"/>
+                        <outlet property="pokemonIDLabel" destination="E5s-h4-RQJ" id="Mvb-PS-GvY"/>
+                        <outlet property="pokemonImage" destination="WC4-tI-4L0" id="rM7-It-62x"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d3L-yu-Ihu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
