@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		DDA03CE924097B25004CB01C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA03CE824097B25004CB01C /* AppDelegate.m */; };
 		DDA03CEC24097B25004CB01C /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA03CEB24097B25004CB01C /* SceneDelegate.m */; };
-		DDA03CEF24097B25004CB01C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA03CEE24097B25004CB01C /* ViewController.m */; };
 		DDA03CF224097B25004CB01C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDA03CF024097B25004CB01C /* Main.storyboard */; };
 		DDA03CF424097B25004CB01C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDA03CF324097B25004CB01C /* Assets.xcassets */; };
 		DDA03CF724097B25004CB01C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDA03CF524097B25004CB01C /* LaunchScreen.storyboard */; };
@@ -22,8 +21,6 @@
 		DDA03CE824097B25004CB01C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		DDA03CEA24097B25004CB01C /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		DDA03CEB24097B25004CB01C /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		DDA03CED24097B25004CB01C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		DDA03CEE24097B25004CB01C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		DDA03CF124097B25004CB01C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DDA03CF324097B25004CB01C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DDA03CF624097B25004CB01C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -61,19 +58,33 @@
 		DDA03CE624097B25004CB01C /* Pokedex */ = {
 			isa = PBXGroup;
 			children = (
-				DDA03CE724097B25004CB01C /* AppDelegate.h */,
-				DDA03CE824097B25004CB01C /* AppDelegate.m */,
-				DDA03CEA24097B25004CB01C /* SceneDelegate.h */,
-				DDA03CEB24097B25004CB01C /* SceneDelegate.m */,
-				DDA03CED24097B25004CB01C /* ViewController.h */,
-				DDA03CEE24097B25004CB01C /* ViewController.m */,
-				DDA03CF024097B25004CB01C /* Main.storyboard */,
+				DDA03D0124097D5F004CB01C /* Resources */,
+				DDA03D0024097B45004CB01C /* Storyboards */,
 				DDA03CF324097B25004CB01C /* Assets.xcassets */,
-				DDA03CF524097B25004CB01C /* LaunchScreen.storyboard */,
 				DDA03CF824097B25004CB01C /* Info.plist */,
 				DDA03CF924097B25004CB01C /* main.m */,
 			);
 			path = Pokedex;
+			sourceTree = "<group>";
+		};
+		DDA03D0024097B45004CB01C /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				DDA03CF024097B25004CB01C /* Main.storyboard */,
+				DDA03CF524097B25004CB01C /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		DDA03D0124097D5F004CB01C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DDA03CE724097B25004CB01C /* AppDelegate.h */,
+				DDA03CE824097B25004CB01C /* AppDelegate.m */,
+				DDA03CEA24097B25004CB01C /* SceneDelegate.h */,
+				DDA03CEB24097B25004CB01C /* SceneDelegate.m */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,7 +157,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DDA03CEF24097B25004CB01C /* ViewController.m in Sources */,
 				DDA03CE924097B25004CB01C /* AppDelegate.m in Sources */,
 				DDA03CFA24097B25004CB01C /* main.m in Sources */,
 				DDA03CEC24097B25004CB01C /* SceneDelegate.m in Sources */,
