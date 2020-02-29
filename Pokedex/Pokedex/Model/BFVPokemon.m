@@ -28,7 +28,14 @@
     NSString *name = dictionary[@"name"];
     NSArray * abilities = dictionary[@"abilities"];
     NSString *sprite = dictionary[@"sprites"][@"front_default"];
-    return [self initWithName:name pokemonID:pokemonID abilities:abilities sprite:sprite];
+    NSMutableArray<NSString *> *abilityNames = [[NSMutableArray alloc]init];
+    for (NSDictionary *ability in abilities) {
+        NSString *name = ability[@"ability"][@"name"];
+        [abilityNames addObject:name];
+        NSLog(@"%@", name);
+    }
+    
+    return [self initWithName:name pokemonID:pokemonID abilities:abilityNames sprite:sprite];
 }
 
 

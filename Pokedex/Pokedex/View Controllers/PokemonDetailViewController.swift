@@ -40,6 +40,7 @@ class PokemonDetailViewController: UIViewController {
                     self.pokemon = fetchedPokemon
                     self.pokemonIDLabel.text = "\(fetchedPokemon.pokemonID)"
                     self.fetchPokemonImage(fetchedPokemon.sprite)
+                    self.ablilitiesLabel.text = "Abilities: \(fetchedPokemon.ablilities.joined(separator: ","))"
                 }
             }
         })
